@@ -3,6 +3,7 @@ package com.example.demo;
 import Util.FileUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 /**
@@ -21,6 +22,22 @@ public class MemberAddController implements Add{
     private TextField phone;
     @FXML
     private TextField team;
+    @FXML
+    private Label ageError;
+    @FXML
+    private Label nameEmptyError;
+    @FXML
+    private Label ageEmptyError;
+    @FXML
+    private Label genderEmptyError;
+    @FXML
+    private Label emailEmptyError;
+    @FXML
+    private Label phoneEmptyError;
+    @FXML
+    private Label teamEmptyError;
+    @FXML
+    private Label phoneError;
 
     /**
      * Initialize the Member Add View, setting the gender choice options to male and female.
@@ -36,7 +53,64 @@ public class MemberAddController implements Add{
      */
     @FXML
     public void addConfirm(){
-        Member member = new Member(name.getText(), age.getText(), gender.getValue(), email.getText(), phone.getText(), team.getText());
-        FileUtil.addData(member);
+        boolean isValid = true;
+        String ageText = age.getText();
+        String phoneText = phone.getText();
+        if (name.getText().isEmpty()){
+            nameEmptyError.setVisible(true);
+            isValid = false;
+        }else {
+            nameEmptyError.setVisible(false);
+        }
+        if (age.getText().isEmpty()){
+            ageEmptyError.setVisible(true);
+            isValid = false;
+        }else {
+            ageEmptyError.setVisible(false);
+        }
+        if (gender.getValue() == null){
+            genderEmptyError.setVisible(true);
+            isValid = false;
+        }else {
+            genderEmptyError.setVisible(false);
+        }
+        if (email.getText().isEmpty()){
+            emailEmptyError.setVisible(true);
+            isValid = false;
+        }else {
+            emailEmptyError.setVisible(false);
+        }
+        if (phone.getText().isEmpty()){
+            phoneEmptyError.setVisible(true);
+            isValid = false;
+        }else {
+            phoneEmptyError.setVisible(false);
+        }
+        if (team.getText().isEmpty()){
+            teamEmptyError.setVisible(true);
+            isValid = false;
+        }else {
+            teamEmptyError.setVisible(false);
+        }
+        if (!isInteger(ageText)){
+            ageError.setVisible(true);
+            isValid = false;
+        }
+        if (!isInteger(phoneText)){
+            phoneError.setVisible(true);
+            isValid = false;
+        }
+        if (isValid){
+            Member member = new Member(name.getText(), age.getText(), gender.getValue(), email.getText(), phone.getText(), team.getText());
+            FileUtil.addData(member);
+        }
+    }
+    private boolean isInteger(String s){
+        try{
+            Integer.parseInt(s);
+            return true;
+        } catch (NumberFormatException e){
+            return false;
+        }
     }
 }

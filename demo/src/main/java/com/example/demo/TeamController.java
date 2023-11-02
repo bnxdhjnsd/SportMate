@@ -75,7 +75,10 @@ public class TeamController implements Controller{
      * Recruit a new Member.
      */
     @FXML
-    public void recruitNewMember(){}
+    public void recruitNewMember(){
+
+
+    }
     /**
      * Updates data to the Team TableView.
      */
