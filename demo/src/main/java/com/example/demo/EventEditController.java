@@ -5,7 +5,9 @@ import Util.FileUtilT;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-
+/**
+ * The 'EventEditController' class is responsible for functioning the edit an Event's information in the app.
+ */
 public class EventEditController implements Edit{
     @FXML
     private TextField eventName;
@@ -17,11 +19,17 @@ public class EventEditController implements Edit{
     private TextField loca;
 
     private static Event selected;
-
+    /**
+     * Sets the team to be edited. This method is called before initializing the view to pass the selected Event's information.
+     *
+     * @param selected The Event object to be edited.
+     */
     public static void edit(Event selected){
         EventEditController.selected = selected;
     }
-
+    /**
+     * Initializes the Event Edit view, filling selected Event info to the input fields.
+     */
     @FXML
     public void initialize(){
         eventName.setText(selected.getEventName());
@@ -29,6 +37,9 @@ public class EventEditController implements Edit{
         time.getEditor().setText(selected.getTime());
         loca.setText(selected.getLoca());
     }
+    /**
+     * Confirms the edited info and add to data.
+     */
     @FXML
     public void addConfirm(){
         Event event = new Event(eventName.getText(), eventType.getText(), time.getEditor().getText(), loca.getText());

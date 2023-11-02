@@ -9,6 +9,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.util.List;
 
+/**
+ * The 'MemberController' class is responsible for controlling the functionality of the Member view in the application.
+ */
 public class MemberController implements Controller{
     @FXML
     private TableView<Member> tableViewM;
@@ -24,11 +27,18 @@ public class MemberController implements Controller{
     private TableColumn<Member, String> phone;
     @FXML
     private TableColumn<Member, String> team;
+
+    /**
+     * Initialize the Member view by populating the TableView with member data.
+     */
     @FXML
     public void initialize(){
         getData();
     }
 
+    /**
+     * Retrieves and display member data in the TableView.
+     */
     private void getData(){
         List<Member> members = FileUtil.readData();
         name.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -40,10 +50,18 @@ public class MemberController implements Controller{
 
         tableViewM.setItems(FXCollections.observableList(members));
     }
+
+    /**
+     * Display the 'Add Member' scene by calling the addM method from the HelloApplication class.
+     */
     @FXML
     public void showAddM(){
         HelloApplication.addM("addM.fxml");
     }
+
+    /**
+     * Allows the user to change a selected member's info and opens edit member scene.
+     */
     @FXML
     public void editMember(){
         Member member = tableViewM.getSelectionModel().getSelectedItem();
@@ -52,6 +70,10 @@ public class MemberController implements Controller{
             HelloApplication.addM("editM.fxml");
         }
     }
+
+    /**
+     * Deletes the selected member's data.
+     */
     @FXML
     public void deleteMember(){
         Member member = tableViewM.getSelectionModel().getSelectedItem();
@@ -60,35 +82,60 @@ public class MemberController implements Controller{
             getData();
         }
     }
+
+    /**
+     * Refreshes and updates the member data.
+     */
     @FXML
     public void refresh(){
         getData();
     }
+
+    /**
+     * Navigates to the 'Team-View' scene.
+     */
     @FXML
     public void goTeam(){
         HelloApplication.changeStage("team-view.fxml");
     }
+    /**
+     * Navigates to the 'Event-View' scene.
+     */
     @FXML
     public void goEvent(){
         HelloApplication.changeStage("event-view.fxml");
     }
+    /**
+     * Navigates to the 'Gallery-View' scene.
+     */
     @FXML
     public void goGallery(){
         HelloApplication.changeStage("gallery-view.fxml");
     }
+    /**
+     * Navigates to the 'Announcement-View' scene.
+     */
     @FXML
     public void goAnnouncement(){
         HelloApplication.changeStage("announcement-view.fxml");
     }
+    /**
+     * Navigates to the 'Login-View' scene.
+     */
     @FXML
     public void logout(){
         HelloApplication.changeStage("login.fxml");
     }
+    /**
+     * Navigates to the 'Dashboard-View' scene.
+     */
     @FXML
     public void goDashboard(){
         HelloApplication.changeStage("dashboard-view.fxml");
     }
-
+    /**
+     * Navigates to the 'Member-View' scene.
+     */
     @FXML
     public void goMember(){
         HelloApplication.changeStage("member-view.fxml");

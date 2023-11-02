@@ -5,7 +5,9 @@ import Util.FileUtilT;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-
+/**
+ * The 'EventAddController' class is responsible for the function of adding a new Event in the app.
+ */
 public class EventAddController implements Add{
     @FXML
     private TextField eventName;
@@ -15,10 +17,16 @@ public class EventAddController implements Add{
     private DatePicker time;
     @FXML
     private TextField loca;
+    /**
+     * Initializes the Team Add view.
+     */
     @FXML
     public void initialize(){
 
     }
+    /**
+     * Connected to confirm button in the add scene, Adds a new team with the provided information to the data store.
+     */
     @FXML
     public void addConfirm(){
         Event event = new Event(eventName.getText(), eventType.getText(), time.getEditor().getText(), loca.getText());

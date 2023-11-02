@@ -5,9 +5,16 @@ import com.example.demo.Member;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * The 'FileUtil' class has transfer data functions such as reading, adding, deleting, and editing Member data.
+ */
 public class FileUtil {
     private static final String DATA_FILE= "C:\\Users\\wangyang12\\IdeaProjects\\sportmate\\demo\\src\\main\\java\\Util\\data.txt";
+    /**
+     * Reads Member data from a txt file and returns a list of Member objects.
+     *
+     * @return A list of Member objects read from the txt file.
+     */
     public static List<Member> readData(){
         List<Member> result = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(DATA_FILE))){
@@ -31,6 +38,11 @@ public class FileUtil {
         }
         return result;
     }
+    /**
+     * Writes a Member object's data to the data file.
+     *
+     * @param member The Member object to be added to the data file.
+     */
     public static void addData(Member member){
         List<Member> result = new ArrayList<>();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(DATA_FILE, true))){
@@ -43,6 +55,11 @@ public class FileUtil {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Delete a Member's data from the file.
+     * @param name The name of the deleted Member.
+     */
     public static void deleteData(String name){
         List<Member> members = readData();
         File file = new File(DATA_FILE);
@@ -58,6 +75,11 @@ public class FileUtil {
         }
 
     }
+
+    /**
+     * Edit a Member's info and refresh the data.
+     * @param m the Member to be edited.
+     */
     public static void editData(Member m){
         List<Member> members = readData();
         File file = new File(DATA_FILE);

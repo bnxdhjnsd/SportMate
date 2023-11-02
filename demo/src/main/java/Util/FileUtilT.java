@@ -6,9 +6,16 @@ import com.example.demo.Team;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * The 'FileUtilT' class has transfer data functions such as reading, adding, deleting, and editing Team data.
+ */
 public class FileUtilT {
     private static final String DATA_FILET= "C:\\Users\\wangyang12\\IdeaProjects\\sportmate\\demo\\src\\main\\java\\Util\\dataT.txt";
+    /**
+     * Reads Team data from a txt file and returns a list of Team objects.
+     *
+     * @return A list of Team objects read from the txt file.
+     */
     public static List<Team> readData(){
         List<Team> result = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(DATA_FILET))){
@@ -30,6 +37,11 @@ public class FileUtilT {
         }
         return result;
     }
+    /**
+     * Writes a Team object's data to the data file.
+     *
+     * @param team The Team object to be added to the data file.
+     */
     public static void addData(Team team){
         List<Team> result = new ArrayList<>();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(DATA_FILET, true))){
@@ -42,6 +54,10 @@ public class FileUtilT {
             e.printStackTrace();
         }
     }
+    /**
+     * Delete a Team's data from the file.
+     * @param teamName The name of the deleted Team.
+     */
     public static void deleteData(String teamName){
         List<Team> teams = readData();
         File file = new File(DATA_FILET);
@@ -57,6 +73,10 @@ public class FileUtilT {
         }
 
     }
+    /**
+     * Edit a Team's info and refresh the data.
+     * @param t the Team to be edited.
+     */
     public static void editData(Team t){
         List<Team> teams = readData();
         File file = new File(DATA_FILET);

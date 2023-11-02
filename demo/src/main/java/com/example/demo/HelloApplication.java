@@ -49,7 +49,7 @@ public class HelloApplication extends Application {
 
     /**
      * Loading FXML file, and open a new stage to add a member.
-     * @param fxml The FXML file
+     * @param fxml The FXML file for new scene.
      */
     public static void addM(String fxml){
         Stage stage = new Stage();
@@ -62,7 +62,10 @@ public class HelloApplication extends Application {
         }
         stage.show();
     }
-
+    /**
+     * Loading FXML file, and open a new stage to add a team.
+     * @param fxml The FXML file for new scene.
+     */
     public static void addT(String fxml){
         Stage stage = new Stage();
         Parent root = null;
@@ -74,7 +77,10 @@ public class HelloApplication extends Application {
         }
         stage.show();
     }
-
+    /**
+     * Loading FXML file, and open a new stage to add an event.
+     * @param fxml The FXML file for new scene.
+     */
     public static void addE(String fxml){
         Stage stage = new Stage();
         Parent root = null;

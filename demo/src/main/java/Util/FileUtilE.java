@@ -6,9 +6,16 @@ import com.example.demo.Team;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * The 'FileUtilE' class has transfer data functions such as reading, adding, deleting, and editing Event data.
+ */
 public class FileUtilE {
     private static final String DATA_FILEE= "C:\\Users\\wangyang12\\IdeaProjects\\sportmate\\demo\\src\\main\\java\\Util\\dataE.txt";
+    /**
+     * Reads Event data from a txt file and returns a list of Event objects.
+     *
+     * @return A list of Event objects read from the txt file.
+     */
     public static List<Event> readData(){
         List<Event> result = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(DATA_FILEE))){
@@ -30,6 +37,11 @@ public class FileUtilE {
         }
         return result;
     }
+    /**
+     * Writes a Event object's data to the data file.
+     *
+     * @param event The Event object to be added to the data file.
+     */
     public static void addData(Event event){
         List<Event> result = new ArrayList<>();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(DATA_FILEE, true))){
@@ -42,6 +54,10 @@ public class FileUtilE {
             e.printStackTrace();
         }
     }
+    /**
+     * Delete a Event's data from the file.
+     * @param eventName The name of the deleted Event.
+     */
     public static void deleteData(String eventName){
         List<Event> events = readData();
         File file = new File(DATA_FILEE);
@@ -57,6 +73,10 @@ public class FileUtilE {
         }
 
     }
+    /**
+     * Edit an Event's info and refresh the data.
+     * @param ee the Event to be edited.
+     */
     public static void editData(Event ee){
         List<Event> events = readData();
         File file = new File(DATA_FILEE);
