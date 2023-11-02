@@ -3,6 +3,7 @@ package com.example.demo;
 import Util.FileUtilE;
 import Util.FileUtilT;
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 public class EventEditController implements Edit{
@@ -11,7 +12,7 @@ public class EventEditController implements Edit{
     @FXML
     private TextField eventType;
     @FXML
-    private TextField time;
+    private DatePicker time;
     @FXML
     private TextField loca;
 
@@ -25,12 +26,12 @@ public class EventEditController implements Edit{
     public void initialize(){
         eventName.setText(selected.getEventName());
         eventType.setText(selected.getEventType());
-        time.setText(selected.getTime());
+        time.getEditor().setText(selected.getTime());
         loca.setText(selected.getLoca());
     }
     @FXML
     public void addConfirm(){
-        Event event = new Event(eventName.getText(), eventType.getText(), time.getText(), loca.getText());
+        Event event = new Event(eventName.getText(), eventType.getText(), time.getEditor().getText(), loca.getText());
         FileUtilE.editData(event);
     }
 }

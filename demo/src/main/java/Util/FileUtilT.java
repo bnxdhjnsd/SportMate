@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileUtilT {
-    private static final String DATA_FILET= "demo\\src\\main\\java\\Util\\dataT.txt";
+    private static final String DATA_FILET= "C:\\Users\\wangyang12\\IdeaProjects\\sportmate\\demo\\src\\main\\java\\Util\\dataT.txt";
     public static List<Team> readData(){
         List<Team> result = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(DATA_FILET))){

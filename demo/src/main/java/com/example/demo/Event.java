@@ -1,10 +1,14 @@
 package com.example.demo;
 
+import javafx.scene.control.TextField;
+
 public class Event {
     private String eventName;
     private String eventType;
     private String time;
     private String loca;
+
+
 
     public String toString() {
         return eventName + "," + eventType + "," + time + "," + loca ;

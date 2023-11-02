@@ -2,6 +2,7 @@ package com.example.demo;
 
 import Util.FileUtil;
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
 public class MemberEditController implements Edit{
@@ -10,7 +11,7 @@ public class MemberEditController implements Edit{
     @FXML
     private TextField age;
     @FXML
-    private TextField gender;
+    private ChoiceBox<String> gender;
     @FXML
     private TextField email;
     @FXML
@@ -26,16 +27,18 @@ public class MemberEditController implements Edit{
 
     @FXML
     public void initialize(){
+        gender.getItems().clear();
+        gender.getItems().addAll("male", "female");
         name.setText(selected.getName());
         age.setText(selected.getAge());
-        gender.setText(selected.getGender());
+        gender.setValue(selected.getGender());
         email.setText(selected.getEmail());
         phone.setText(selected.getPhone());
         team.setText(selected.getTeam());
     }
     @FXML
     public void addConfirm(){
-        Member member = new Member(name.getText(), age.getText(), gender.getText(), email.getText(), phone.getText(), team.getText());
+        Member member = new Member(name.getText(), age.getText(), gender.getValue(), email.getText(), phone.getText(), team.getText());
         FileUtil.editData(member);
     }
 }
