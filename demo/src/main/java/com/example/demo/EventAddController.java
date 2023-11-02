@@ -5,7 +5,7 @@ import Util.FileUtilT;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-public class EventAddController {
+public class EventAddController implements Add{
     @FXML
     private TextField eventName;
     @FXML

@@ -55,6 +55,10 @@ public class TeamController implements Controller{
             getData();
         }
     }
+
+    @FXML
+    public void recruitNewMember(){}
+
     @FXML
     public void refresh(){
         getData();

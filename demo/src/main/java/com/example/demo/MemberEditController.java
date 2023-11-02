@@ -4,7 +4,7 @@ import Util.FileUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-public class MemberEditController {
+public class MemberEditController implements Edit{
     @FXML
     private TextField name;
     @FXML
