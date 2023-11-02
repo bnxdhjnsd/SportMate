@@ -1,8 +1,7 @@
 package com.example.demo.add;
 
-import Util.FileUtilM;
+import com.example.demo.Util.FileUtilM;
 import com.example.demo.Member;
-import com.example.demo.add.Add;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;

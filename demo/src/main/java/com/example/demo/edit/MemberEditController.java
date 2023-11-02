@@ -1,6 +1,6 @@
 package com.example.demo.edit;
 
-import Util.FileUtilM;
+import com.example.demo.Util.FileUtilM;
 import com.example.demo.Member;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;

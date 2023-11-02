@@ -1,4 +1,4 @@
-package Util;
+package com.example.demo.Util;
 
 import com.example.demo.Member;
 
@@ -9,7 +9,7 @@ import java.util.List;
  * The 'FileUtilM' class has transfer data functions such as reading, adding, deleting, and editing Member data.
  */
 public class FileUtilM {
-    private static final String DATA_FILE= "demo\\src\\main\\java\\Util\\dataM.txt";
+    private static final String DATA_FILE= "demo/src/main/java/com/example/demo/Util/dataM.txt";
     /**
      * Reads Member data from a txt file and returns a list of Member objects.
      *

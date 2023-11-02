@@ -1,7 +1,6 @@
-package Util;
+package com.example.demo.Util;
 
 import com.example.demo.Event;
-import com.example.demo.Team;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ import java.util.List;
  * The 'FileUtilE' class has transfer data functions such as reading, adding, deleting, and editing Event data.
  */
 public class FileUtilE {
-    private static final String DATA_FILEE= "demo\\src\\main\\java\\Util\\dataE.txt";
+    private static final String DATA_FILEE= "demo/src/main/java/com/example/demo/Util/dataE.txt";
     /**
      * Reads Event data from a txt file and returns a list of Event objects.
      *

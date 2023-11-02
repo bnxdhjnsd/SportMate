@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import Util.FileUtilM;
+import com.example.demo.Util.FileUtilM;
 import com.example.demo.HelloApplication;
 import com.example.demo.Member;
 import com.example.demo.edit.MemberEditController;
