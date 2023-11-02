@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileUtil {
-    private static final String DATA_FILE= "C:\\Users\\wangyang12\\Desktop\\demo\\demo\\src\\main\\java\\Util\\data.txt";
+    private static final String DATA_FILE= "demo\\src\\main\\java\\Util\\data.txt";
     public static List<Member> readData(){
         List<Member> result = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(DATA_FILE))){

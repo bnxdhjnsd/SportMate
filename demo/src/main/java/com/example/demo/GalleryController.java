@@ -13,7 +13,7 @@ public class GalleryController implements Controller{
     }
     @FXML
     public void goMember(){
-        HelloApplication.changeStage("hello-view.fxml");
+        HelloApplication.changeStage("member-view.fxml");
     }
     @FXML
     public void goGallery(){
@@ -33,4 +33,19 @@ public class GalleryController implements Controller{
     public void goDashboard() {
         HelloApplication.changeStage("dashboard-view.fxml");
     }
+
+    @FXML
+    public void addPicture(){}
+
+    @FXML
+    public void editPicture(){}
+
+    @FXML
+    public void deletePicture(){}
+
+    @FXML
+    public void nextPicture(){}
+
+    @FXML
+    public void previousPicture(){}
 }

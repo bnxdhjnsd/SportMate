@@ -63,11 +63,11 @@
                         <Image url="@Team-sports-Barch-2019-soccer.jpg" />
                      </image>
                   </ImageView>
-                  <Button layoutX="263.0" layoutY="318.0" mnemonicParsing="false" text="Edit" />
-                  <Button layoutX="316.0" layoutY="318.0" mnemonicParsing="false" text="Delete" />
-                  <Button layoutX="209.0" layoutY="318.0" mnemonicParsing="false" text="Add" />
-                  <Button layoutX="128.0" layoutY="318.0" mnemonicParsing="false" text="Next" />
-                  <Button layoutX="51.0" layoutY="318.0" mnemonicParsing="false" text="Previous" />
+                  <Button layoutX="263.0" layoutY="318.0" mnemonicParsing="false" text="Edit" onAction="#editPicture"/>
+                  <Button layoutX="316.0" layoutY="318.0" mnemonicParsing="false" text="Delete" onAction="#deletePicture"/>
+                  <Button layoutX="209.0" layoutY="318.0" mnemonicParsing="false" text="Add" onAction="#addPicture"/>
+                  <Button layoutX="128.0" layoutY="318.0" mnemonicParsing="false" text="Next" onAction="#nextPicture"/>
+                  <Button layoutX="51.0" layoutY="318.0" mnemonicParsing="false" text="Previous" onAction="#previousPicture"/>
                   <Label layoutX="171.0" layoutY="267.0" text="Football Team" />
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="284.0" text="08.08.2024" />
 

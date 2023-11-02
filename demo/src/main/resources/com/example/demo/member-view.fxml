@@ -12,7 +12,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MemberController">
    <children>
       <MenuBar layoutY="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <menus>
@@ -37,7 +37,7 @@
         <items>
           <AnchorPane minHeight="271.0" minWidth="0.0" prefHeight="297.0" prefWidth="173.0">
                <children>
-                  <Button fx:id="button_members" layoutY="128.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="MEMBERS" />
+                  <Button fx:id="button_members" layoutY="128.0" mnemonicParsing="false" onAction="#goMember" prefHeight="25.0" prefWidth="173.0" text="MEMBERS" />
                   <Button fx:id="button_teams" layoutY="153.0" mnemonicParsing="false" onAction="#goTeam" prefHeight="25.0" prefWidth="173.0" text="TEAMS" />
                   <Button fx:id="button_event" layoutY="178.0" mnemonicParsing="false" onAction="#goEvent" prefHeight="25.0" prefWidth="173.0" text="EVENTS" />
                   <Button layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="LOGOUT" onAction="#logout" />

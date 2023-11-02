@@ -3,14 +3,13 @@ package com.example.demo;
 import Util.FileUtil;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.util.List;
 
-public class HelloController {
+public class MemberController implements Controller{
     @FXML
     private TableView<Member> tableViewM;
     @FXML
@@ -88,5 +87,10 @@ public class HelloController {
     @FXML
     public void goDashboard(){
         HelloApplication.changeStage("dashboard-view.fxml");
+    }
+
+    @FXML
+    public void goMember(){
+        HelloApplication.changeStage("member-view.fxml");
     }
 }
