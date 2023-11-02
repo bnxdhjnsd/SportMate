@@ -3,7 +3,12 @@ package com.example.demo;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
+/**
+ * The 'LoginController' class is the entry of a JavaFX application called "SportMate".
+ * The class provides method to allow users to input account and password to access the content of the application.
+ * @version 1.0
+ * @since 17.0
+ */
 public class LoginController {
     @FXML
     private TextField account;
@@ -11,6 +16,10 @@ public class LoginController {
     private TextField password;
     @FXML
     private Label error;
+
+    /**
+     * The method is called when related FXML file is initialized.
+     */
     @FXML
     public void initialize(){
 
