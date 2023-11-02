@@ -10,7 +10,7 @@ import java.util.List;
  * The 'FileUtilT' class has transfer data functions such as reading, adding, deleting, and editing Team data.
  */
 public class FileUtilT {
-    private static final String DATA_FILET= "C:\\Users\\wangyang12\\IdeaProjects\\sportmate\\demo\\src\\main\\java\\Util\\dataT.txt";
+    private static final String DATA_FILET= "demo\\src\\main\\java\\Util\\dataT.txt";
     /**
      * Reads Team data from a txt file and returns a list of Team objects.
      *

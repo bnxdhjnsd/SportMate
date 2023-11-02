@@ -1,6 +1,7 @@
-package com.example.demo;
+package com.example.demo.edit;
 
 import Util.FileUtilE;
+import com.example.demo.Event;
 import javafx.fxml.FXML;
 /**
  * The 'Edit' interface provides a contract for classes that handle the editing of items in the application.

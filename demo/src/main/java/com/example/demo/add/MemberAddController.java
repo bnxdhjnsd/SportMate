@@ -1,6 +1,8 @@
-package com.example.demo;
+package com.example.demo.add;
 
-import Util.FileUtil;
+import Util.FileUtilM;
+import com.example.demo.Member;
+import com.example.demo.add.Add;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
@@ -8,7 +10,7 @@ import javafx.scene.control.TextField;
 /**
  * The 'MemberAddController' class is responsible for the function of adding a new member in the app.
  */
-public class MemberAddController implements Add{
+public class MemberAddController implements Add {
     @FXML
     private TextField name;
     @FXML
@@ -37,6 +39,6 @@ public class MemberAddController implements Add{
     @FXML
     public void addConfirm(){
         Member member = new Member(name.getText(), age.getText(), gender.getValue(), email.getText(), phone.getText(), team.getText());
-        FileUtil.addData(member);
+        FileUtilM.addData(member);
     }
 }

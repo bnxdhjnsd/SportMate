@@ -1,6 +1,7 @@
-package com.example.demo;
+package com.example.demo.edit;
 
-import Util.FileUtil;
+import Util.FileUtilM;
+import com.example.demo.Member;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
@@ -53,6 +54,6 @@ public class MemberEditController implements Edit{
     @FXML
     public void addConfirm(){
         Member member = new Member(name.getText(), age.getText(), gender.getValue(), email.getText(), phone.getText(), team.getText());
-        FileUtil.editData(member);
+        FileUtilM.editData(member);
     }
 }

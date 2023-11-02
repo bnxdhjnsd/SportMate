@@ -1,10 +1,11 @@
-package com.example.demo;
+package com.example.demo.controller;
 
+import com.example.demo.HelloApplication;
 import javafx.fxml.FXML;
 /**
- * The 'GalleryController' class is responsible for controlling the functionality of the gallery view in the application.
+ * The 'AnnouncementController' class is responsible for controlling the functionality of the announcement view in the application.
  */
-public class GalleryController implements Controller{
+public class AnnouncementController implements Controller {
     /**
      * Navigates to the "Team View" scene.
      */
@@ -30,14 +31,14 @@ public class GalleryController implements Controller{
      */
     @FXML
     public void goGallery(){
-
+        HelloApplication.changeStage("gallery-view.fxml");
     }
     /**
      * Navigates to the "Announcement View" scene.
      */
     @FXML
     public void goAnnouncement(){
-        HelloApplication.changeStage("announcement-view.fxml");
+
     }
     /**
      * Logs out the current user and returns to the login scene.
@@ -54,28 +55,34 @@ public class GalleryController implements Controller{
     }
 
     /**
-     * Allows the user to add a new picture to the gallery.
+     * Allows the user to add a new announcement.
      */
     @FXML
-    public void addPicture(){}
+    public void addAnnouncement(){}
     /**
-     * Allows the user to edit an existing picture in the gallery.
+     * Allows the user to edit an existing announcement.
      */
     @FXML
-    public void editPicture(){}
+    public void editAnnouncement(){}
     /**
-     * Allows the user to delete an existing picture from the gallery.
+     * Allows the user to delete an existing announcement.
      */
     @FXML
-    public void deletePicture(){}
+    public void deleteAnnouncement(){}
     /**
-     * Displays the next picture in the gallery.
+     * Displays the next announcement.
      */
     @FXML
-    public void nextPicture(){}
+    public void nextAnnouncement(){}
     /**
-     * Displays the previous picture in the gallery.
+     * Displays the previous announcement.
      */
     @FXML
-    public void previousPicture(){}
+    public void previousAnnouncement(){}
+    /**
+     * Allows the user to send an email related to the announcement.
+     */
+    @FXML
+    public void sendEmail(){}
+
 }

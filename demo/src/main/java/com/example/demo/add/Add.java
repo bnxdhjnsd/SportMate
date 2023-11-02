@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.add;
 
 import Util.FileUtilE;
 import javafx.fxml.FXML;

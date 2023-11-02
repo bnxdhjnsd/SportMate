@@ -1,14 +1,15 @@
-package com.example.demo;
+package com.example.demo.add;
 
 import Util.FileUtilE;
-import Util.FileUtilT;
+import com.example.demo.Event;
+import com.example.demo.add.Add;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 /**
  * The 'EventAddController' class is responsible for the function of adding a new Event in the app.
  */
-public class EventAddController implements Add{
+public class EventAddController implements Add {
     @FXML
     private TextField eventName;
     @FXML
