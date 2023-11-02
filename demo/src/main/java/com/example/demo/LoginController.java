@@ -24,6 +24,10 @@ public class LoginController {
     public void initialize(){
 
     }
+
+    /**
+     * This method is called when user tries to use account and password to log in, it performs the log in action or display error messages.
+     */
     @FXML
     public void login(){
         String acc = account.getText();
