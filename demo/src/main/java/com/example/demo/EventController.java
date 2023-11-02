@@ -61,7 +61,7 @@ public class EventController {
     }
     @FXML
     public void goMember(){
-        HelloApplication.changeStage("hello-view.fxml");
+        HelloApplication.changeStage("member-view.fxml");
     }
     @FXML
     public void goTeam(){

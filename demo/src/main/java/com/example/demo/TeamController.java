@@ -10,7 +10,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.util.List;
 
-public class TeamController {
+public class TeamController implements Controller{
     @FXML
     private TableView<Team> tableViewT;
     @FXML
@@ -61,8 +61,14 @@ public class TeamController {
     }
     @FXML
     public void goMember(){
-        HelloApplication.changeStage("hello-view.fxml");
+        HelloApplication.changeStage("member-view.fxml");
     }
+
+    @Override
+    public void goTeam() {
+
+    }
+
     @FXML
     public void goEvent(){
         HelloApplication.changeStage("event-view.fxml");

@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.control.Label?>
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EventController">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EventController">
     <children>
         <MenuBar layoutY="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <menus>
@@ -40,10 +32,10 @@
                         <Button fx:id="button_members" layoutY="128.0" mnemonicParsing="false" onAction="#goMember" prefHeight="25.0" prefWidth="173.0" text="MEMBERS" />
                         <Button fx:id="button_teams" layoutY="153.0" mnemonicParsing="false" onAction="#goTeam" prefHeight="25.0" prefWidth="173.0" text="TEAMS" />
                         <Button fx:id="button_event" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="EVENTS" />
-                        <Button layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="LOGOUT" onAction="#logout" />
+                        <Button layoutY="342.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="173.0" text="LOGOUT" />
                         <Button fx:id="dashboard" layoutY="103.0" mnemonicParsing="false" onAction="#goDashboard" prefHeight="25.0" prefWidth="173.0" text="DASHBOARD" />
-                        <Button fx:id="announcement" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="ANNOUNCEMENT" onAction="#goAnnouncement"/>
-                        <Button fx:id="gallery" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="GALLERY" onAction="#goGallery" />
+                        <Button fx:id="announcement" layoutY="203.0" mnemonicParsing="false" onAction="#goAnnouncement" prefHeight="25.0" prefWidth="173.0" text="ANNOUNCEMENT" />
+                        <Button fx:id="gallery" layoutY="228.0" mnemonicParsing="false" onAction="#goGallery" prefHeight="25.0" prefWidth="173.0" text="GALLERY" />
                         <ImageView fitHeight="97.0" fitWidth="81.0" layoutX="46.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@—Pngtree—cartoon%20sports%20fitness%20equipment_3594503.png" />
@@ -58,8 +50,8 @@
                             <columns>
                                 <TableColumn fx:id="eventName" prefWidth="103.99994146823883" text="TITLE" />
                                 <TableColumn fx:id="eventType" prefWidth="71.33330535888672" text="TYPE" />
-                                <TableColumn fx:id="time" prefWidth="98.00001525878906" text="TIME" />
-                                <TableColumn fx:id="loca" prefWidth="145.3333740234375" text="LOCATION" />
+                                <TableColumn fx:id="time" prefWidth="98.00001525878906" text="LOCATION" />
+                                <TableColumn fx:id="loca" prefWidth="145.3333740234375" text="TIME" />
                             </columns>
                         </TableView>
                         <Button fx:id="addE" layoutX="255.0" layoutY="340.0" mnemonicParsing="false" onAction="#showAddE" text="ADD" />

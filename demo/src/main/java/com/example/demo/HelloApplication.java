@@ -18,10 +18,6 @@ public class HelloApplication extends Application {
         stage.setTitle("SportM!");
         changeStage("login.fxml");
         stage.show();
-        //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        //Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-        //stage.setScene(new Scene(root));
-        //Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
         stage.setResizable(false);
 

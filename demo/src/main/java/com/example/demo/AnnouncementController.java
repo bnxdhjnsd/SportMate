@@ -13,7 +13,7 @@ public class AnnouncementController implements Controller{
     }
     @FXML
     public void goMember(){
-        HelloApplication.changeStage("hello-view.fxml");
+        HelloApplication.changeStage("member-view.fxml");
     }
     @FXML
     public void goGallery(){
@@ -33,4 +33,23 @@ public class AnnouncementController implements Controller{
     public void goDashboard() {
         HelloApplication.changeStage("dashboard-view.fxml");
     }
+
+    @FXML
+    public void addAnnouncement(){}
+
+    @FXML
+    public void editAnnouncement(){}
+
+    @FXML
+    public void deleteAnnouncement(){}
+
+    @FXML
+    public void nextAnnouncement(){}
+
+    @FXML
+    public void previousAnnouncement(){}
+
+    @FXML
+    public void sendEmail(){}
+
 }

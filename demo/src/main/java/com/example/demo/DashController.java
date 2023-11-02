@@ -2,7 +2,7 @@ package com.example.demo;
 
 import javafx.fxml.FXML;
 
-public class DashController {
+public class DashController implements Controller{
     @FXML
     public void goTeam(){
         HelloApplication.changeStage("team-view.fxml");
@@ -13,7 +13,7 @@ public class DashController {
     }
     @FXML
     public void goMember(){
-        HelloApplication.changeStage("hello-view.fxml");
+        HelloApplication.changeStage("member-view.fxml");
     }
     @FXML
     public void goGallery(){
@@ -26,5 +26,10 @@ public class DashController {
     @FXML
     public void logout(){
         HelloApplication.changeStage("login.fxml");
+    }
+
+    @Override
+    public void goDashboard() {
+
     }
 }
