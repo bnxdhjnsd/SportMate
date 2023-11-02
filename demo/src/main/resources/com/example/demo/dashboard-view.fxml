@@ -6,13 +6,13 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.DashController">
    <children>
       <MenuBar layoutY="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <menus>
@@ -37,12 +37,12 @@
         <items>
           <AnchorPane minHeight="271.0" minWidth="0.0" prefHeight="297.0" prefWidth="173.0">
                <children>
-                  <Button fx:id="button_members" layoutY="128.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="MEMBERS" />
+                  <Button fx:id="button_members" layoutY="128.0" mnemonicParsing="false" onAction="#goMember" prefHeight="25.0" prefWidth="173.0" text="MEMBERS" />
                   <Button fx:id="button_teams" layoutY="153.0" mnemonicParsing="false" onAction="#goTeam" prefHeight="25.0" prefWidth="173.0" text="TEAMS" />
                   <Button fx:id="button_event" layoutY="178.0" mnemonicParsing="false" onAction="#goEvent" prefHeight="25.0" prefWidth="173.0" text="EVENTS" />
                   <Button layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="LOGOUT" onAction="#logout" />
-                  <Button fx:id="dashboard" layoutY="103.0" mnemonicParsing="false" onAction="#goDashboard" prefHeight="25.0" prefWidth="173.0" text="DASHBOARD" />
-                  <Button fx:id="announcement" layoutY="203.0" mnemonicParsing="false" onAction="#goAnnouncement" prefHeight="25.0" prefWidth="173.0" text="ANNOUNCEMENT" />
+                  <Button fx:id="dashboard" layoutY="103.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="DASHBOARD" />
+                  <Button fx:id="announcement" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="ANNOUNCEMENT" onAction="#goAnnouncement"/>
                   <Button fx:id="gallery" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="GALLERY" onAction="#goGallery" />
                   <ImageView fitHeight="97.0" fitWidth="81.0" layoutX="46.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -54,20 +54,21 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <TableView fx:id="tableViewM" layoutX="14.0" layoutY="27.0" prefHeight="335.0" prefWidth="418.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <columns>
-                      <TableColumn fx:id="name" prefWidth="75.0" text="NAME" />
-                      <TableColumn fx:id="age" prefWidth="31.3333740234375" text="AGE" />
-                        <TableColumn fx:id="gender" prefWidth="66.66674041748047" text="GENDER" />
-                        <TableColumn fx:id="email" prefWidth="77.33331298828125" text="EMAIL" />
-                        <TableColumn fx:id="phone" prefWidth="116.66664123535156" text="PHONE" />
-                        <TableColumn fx:id="team" prefWidth="48.66668701171875" text="TEAM" />
-                    </columns>
-                  </TableView>
-                  <Button fx:id="addM" layoutX="255.0" layoutY="340.0" mnemonicParsing="false" onAction="#showAddM" text="ADD" />
-                  <Button fx:id="deleteM" layoutX="358.0" layoutY="340.0" mnemonicParsing="false" onAction="#deleteMember" text="DELETE" />
-                  <Button fx:id="editM" layoutX="307.0" layoutY="340.0" mnemonicParsing="false" onAction="#editMember" text="EDIT" />
-                  <Button fx:id="refresh" layoutX="5.0" layoutY="340.0" mnemonicParsing="false" onAction="#refresh" text="REFRESH" />
+                  <Label layoutX="22.0" layoutY="14.0" prefHeight="42.0" prefWidth="282.0" text="DASHBOARD" textFill="#ff6200">
+                     <font>
+                        <Font name="Franklin Gothic Heavy Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="69.0" prefHeight="42.0" prefWidth="282.0" text="Instruction">
+                     <font>
+                        <Font name="Franklin Gothic Heavy Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextArea layoutX="51.0" layoutY="111.0" prefHeight="223.0" prefWidth="315.0" text="1. Members: add/edit/delete&#10;&#10;2.Teams: add/edit/delete/recruit member&#10;&#10;3. Events: add/edit/delete&#10;&#10;4. Annoucement: add/edit/delete/send &#10;Email to members&#10;&#10;5. Gallery: add/edit/delete/view photos&#10;">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextArea>
                </children></AnchorPane>
         </items>
       </SplitPane>

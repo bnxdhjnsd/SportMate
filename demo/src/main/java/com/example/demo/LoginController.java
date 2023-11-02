@@ -30,7 +30,7 @@ public class LoginController {
             return;
         }
         if (acc.equals("123") && pass.equals("123")){
-            HelloApplication.changeStage("hello-view.fxml");
+            HelloApplication.changeStage("dashboard-view.fxml");
         }else {
             error.setText("Wrong acc/password.");
             error.setVisible(true);

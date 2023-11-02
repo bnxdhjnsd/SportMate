@@ -73,4 +73,20 @@ public class HelloController {
     public void goEvent(){
         HelloApplication.changeStage("event-view.fxml");
     }
+    @FXML
+    public void goGallery(){
+        HelloApplication.changeStage("gallery-view.fxml");
+    }
+    @FXML
+    public void goAnnouncement(){
+        HelloApplication.changeStage("announcement-view.fxml");
+    }
+    @FXML
+    public void logout(){
+        HelloApplication.changeStage("login.fxml");
+    }
+    @FXML
+    public void goDashboard(){
+        HelloApplication.changeStage("dashboard-view.fxml");
+    }
 }

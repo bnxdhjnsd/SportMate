@@ -67,4 +67,21 @@ public class EventController {
     public void goTeam(){
         HelloApplication.changeStage("team-view.fxml");
     }
+
+    @FXML
+    public void goAnnouncement(){
+        HelloApplication.changeStage("announcement-view.fxml");
+    }
+    @FXML
+    public void logout(){
+        HelloApplication.changeStage("login.fxml");
+    }
+    @FXML
+    public void goDashboard(){
+        HelloApplication.changeStage("dashboard-view.fxml");
+    }
+    @FXML
+    public void goGallery(){
+        HelloApplication.changeStage("gallery-view.fxml");
+    }
 }
