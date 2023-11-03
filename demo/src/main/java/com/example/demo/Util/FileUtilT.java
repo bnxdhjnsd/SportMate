@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * The 'FileUtilT' class has transfer data functions such as reading, adding, deleting, and editing Team data.
  */
-public class FileUtilT {
+public class FileUtilT implements FileUtil{
     private static final String DATA_FILET= "demo/src/main/java/com/example/demo/Util/dataT.txt";
     /**
      * Reads Team data from a txt file and returns a list of Team objects.

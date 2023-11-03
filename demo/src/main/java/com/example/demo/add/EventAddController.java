@@ -18,7 +18,7 @@ public class EventAddController implements Add {
     @FXML
     private TextField loca;
     /**
-     * Initializes the Team Add view.
+     * Initializes the Event Add view.
      */
     @FXML
     public void initialize(){

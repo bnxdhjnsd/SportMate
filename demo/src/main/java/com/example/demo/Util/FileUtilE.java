@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * The 'FileUtilE' class has transfer data functions such as reading, adding, deleting, and editing Event data.
  */
-public class FileUtilE {
+public class FileUtilE implements FileUtil{
     private static final String DATA_FILEE= "demo/src/main/java/com/example/demo/Util/dataE.txt";
     /**
      * Reads Event data from a txt file and returns a list of Event objects.

@@ -11,11 +11,13 @@ public interface Edit {
      *
      * @param selected The event to be edited.
      */
-    public static void edit(Event selected){
+    public static void edit(Object selected){
 
     }
     /**
      * Confirms and applies the edit to the item.
      */
     public void addConfirm();
+
+    public void initialize();
 }
