@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
  * The 'EventAddController' class is responsible for the function of adding a new Event in the app.
  */
 public class AnnouncementAddController implements Add{
+    @FXML
     private TextField title;
     @FXML
     private TextArea content;

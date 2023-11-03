@@ -1,6 +1,17 @@
 package com.example.demo.edit;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+
 public class GalleryEditController implements Edit {
+    @FXML
+    private TextField title;
+    @FXML
+    private ImageView pic;
+    @FXML
+    private DatePicker date;
     @Override
     /**
      * Confirms and saves the edited gallery's information to data.
@@ -19,4 +30,6 @@ public class GalleryEditController implements Edit {
     public void initialize() {
 
     }
+
+
 }

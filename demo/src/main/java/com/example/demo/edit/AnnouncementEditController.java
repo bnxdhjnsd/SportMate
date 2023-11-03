@@ -1,6 +1,17 @@
 package com.example.demo.edit;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
 public class AnnouncementEditController implements Edit{
+    @FXML
+    private TextField title;
+    @FXML
+    private TextArea content;
+    @FXML
+    private DatePicker date;
     @Override
     /**
      * Confirms and saves the edited announcement's information to data.
@@ -18,4 +29,6 @@ public class AnnouncementEditController implements Edit{
     public void initialize() {
 
     }
+
+
 }

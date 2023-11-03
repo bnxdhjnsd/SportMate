@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 
 public class GalleryAddController implements Add{
-
+    @FXML
     private TextField title;
     @FXML
     private ImageView pic;
