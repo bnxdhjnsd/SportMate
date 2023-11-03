@@ -4,7 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-
+/**
+ * The 'GalleryEditController' class is responsible for functioning the edit a Gallery's information in the app.
+ */
 public class GalleryEditController implements Edit {
     @FXML
     private TextField title;

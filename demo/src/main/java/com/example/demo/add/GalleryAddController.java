@@ -4,7 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-
+/**
+ * The 'GalleryAddController' class is responsible for the function of adding a new Gallery in the app.
+ */
 public class GalleryAddController implements Add{
     @FXML
     private TextField title;

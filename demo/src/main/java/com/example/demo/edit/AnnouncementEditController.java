@@ -4,7 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-
+/**
+ * The 'AnnouncementEditController' class is responsible for functioning the edit an Announcement's information in the app.
+ */
 public class AnnouncementEditController implements Edit{
     @FXML
     private TextField title;

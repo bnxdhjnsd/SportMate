@@ -5,7 +5,9 @@ import com.example.demo.Gallery;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * The 'FileUtilG' class has transfer data functions such as reading, adding, deleting, and editing Gallery data.
+ */
 public class FileUtilG implements FileUtil{
 
     private static final String DATA_FILEE= "demo/src/main/java/com/example/demo/Util/dataA.txt";

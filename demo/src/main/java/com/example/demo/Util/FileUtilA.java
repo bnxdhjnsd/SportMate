@@ -6,7 +6,9 @@ import com.example.demo.Event;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * The 'FileUtilA' class has transfer data functions such as reading, adding, deleting, and editing Announcement data.
+ */
 public class FileUtilA implements FileUtil{
 
     private static final String DATA_FILEE= "demo/src/main/java/com/example/demo/Util/dataA.txt";
