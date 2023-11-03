@@ -17,7 +17,7 @@ public interface Edit {
     /**
      * Confirms and applies the edit to the item.
      */
-    public void addConfirm();
+    public void editConfirm();
 
     public void initialize();
 }

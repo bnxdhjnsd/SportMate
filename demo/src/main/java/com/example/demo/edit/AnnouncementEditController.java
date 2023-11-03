@@ -7,7 +7,7 @@ public class AnnouncementEditController implements Edit{
      * Retrieves the input values from the input fields, creates a new Announcement object, and updates the data using FileUtil.
      * Connected to the 'confirm' button.
      */
-    public void addConfirm() {
+    public void editConfirm() {
 
     }
 

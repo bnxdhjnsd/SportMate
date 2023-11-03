@@ -52,7 +52,7 @@ public class MemberEditController implements Edit{
      * Connected to the 'confirm' button.
      */
     @FXML
-    public void addConfirm(){
+    public void editConfirm(){
         Member member = new Member(name.getText(), age.getText(), gender.getValue(), email.getText(), phone.getText(), team.getText());
         FileUtilM.editData(member);
     }

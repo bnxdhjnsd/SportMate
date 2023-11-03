@@ -2,10 +2,16 @@ package com.example.demo.controller;
 
 import com.example.demo.HelloApplication;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+
 /**
  * The 'GalleryController' class is responsible for controlling the functionality of the gallery view in the application.
  */
 public class GalleryController implements Controller{
+   ImageView pic;
+   Label date, title;
+
     /**
      * Navigates to the "Team View" scene.
      */

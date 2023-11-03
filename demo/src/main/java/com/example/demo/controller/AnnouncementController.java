@@ -2,10 +2,15 @@ package com.example.demo.controller;
 
 import com.example.demo.HelloApplication;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+
 /**
  * The 'AnnouncementController' class is responsible for controlling the functionality of the announcement view in the application.
  */
 public class AnnouncementController implements Controller {
+    TextArea content;
+    Label date, title;
     /**
      * Navigates to the "Team View" scene.
      */

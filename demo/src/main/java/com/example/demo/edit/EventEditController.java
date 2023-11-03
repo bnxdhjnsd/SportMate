@@ -41,7 +41,7 @@ public class EventEditController implements Edit{
      * Confirms the edited info and add to data.
      */
     @FXML
-    public void addConfirm(){
+    public void editConfirm(){
         Event event = new Event(eventName.getText(), eventType.getText(), time.getEditor().getText(), loca.getText());
         FileUtilE.editData(event);
     }

@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.HelloApplication;
-import com.example.demo.StringUtil;
+import com.example.demo.Util.StringUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;

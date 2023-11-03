@@ -1,6 +1,17 @@
 package com.example.demo.add;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+
 public class GalleryAddController implements Add{
+
+    private TextField title;
+    @FXML
+    private ImageView pic;
+    @FXML
+    private DatePicker date;
 
     /**
      * Initializes the Gallery Add view.

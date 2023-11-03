@@ -40,7 +40,7 @@ public class TeamEditController {
      * Confirms the edited info and add to data.
      */
     @FXML
-    public void addConfirm(){
+    public void editConfirm(){
         Team team = new Team(teamName.getText(), type.getText(), leader.getText(), memberList.getText());
         FileUtilT.editData(team);
     }

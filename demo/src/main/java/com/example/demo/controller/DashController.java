@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
  * The 'DashController' class is responsible for controlling the functionality of the dashboard view in the application.
  */
 public class DashController implements Controller {
+
+    String instruction;
     /**
      * Navigates to the "Team View" scene.
      */
@@ -48,9 +50,17 @@ public class DashController implements Controller {
     public void logout(){
         HelloApplication.changeStage("login.fxml");
     }
-
+    /**
+     * Navigates to the "Dashboard View" scene.
+     */
     @Override
     public void goDashboard() {
+
+    }
+    /**
+     * Change the content of the instruction on the "Dashboard View" scene.
+     */
+    public void changeInstruction(){
 
     }
 }

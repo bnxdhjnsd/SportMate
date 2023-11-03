@@ -19,13 +19,13 @@ public class TeamController implements Controller{
     @FXML
     private TableView<Team> tableViewT;
     @FXML
-    private TableColumn<Member, String> teamName;
+    private TableColumn<Team, String> teamName;
     @FXML
-    private TableColumn<Member, String> type;
+    private TableColumn<Team, String> type;
     @FXML
-    private TableColumn<Member, String> leader;
+    private TableColumn<Team, String> leader;
     @FXML
-    private TableColumn<Member, String> memberList;
+    private TableColumn<Team, String> memberList;
     /**
      * Initializes data to the TableView.
      */
