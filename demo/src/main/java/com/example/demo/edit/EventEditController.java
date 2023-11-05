@@ -1,7 +1,7 @@
-package com.example.demo;
+package com.example.demo.edit;
 
-import Util.FileUtilE;
-import Util.FileUtilT;
+import com.example.demo.Util.FileUtilE;
+import com.example.demo.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
@@ -41,7 +41,7 @@ public class EventEditController implements Edit{
      * Confirms the edited info and add to data.
      */
     @FXML
-    public void addConfirm(){
+    public void editConfirm(){
         Event event = new Event(eventName.getText(), eventType.getText(), time.getEditor().getText(), loca.getText());
         FileUtilE.editData(event);
     }

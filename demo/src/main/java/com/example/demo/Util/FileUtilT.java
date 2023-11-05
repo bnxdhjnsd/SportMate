@@ -1,6 +1,5 @@
-package Util;
+package com.example.demo.Util;
 
-import com.example.demo.Member;
 import com.example.demo.Team;
 
 import java.io.*;
@@ -9,8 +8,8 @@ import java.util.List;
 /**
  * The 'FileUtilT' class has transfer data functions such as reading, adding, deleting, and editing Team data.
  */
-public class FileUtilT {
-    private static final String DATA_FILET= "C:\\Users\\wangyang12\\IdeaProjects\\sportmate\\demo\\src\\main\\java\\Util\\dataT.txt";
+public class FileUtilT implements FileUtil{
+    private static final String DATA_FILET= "demo/src/main/java/com/example/demo/Util/dataT.txt";
     /**
      * Reads Team data from a txt file and returns a list of Team objects.
      *

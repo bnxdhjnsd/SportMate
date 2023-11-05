@@ -4,7 +4,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EventController">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.EventController">
     <children>
         <MenuBar layoutY="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <menus>
@@ -50,8 +50,8 @@
                             <columns>
                                 <TableColumn fx:id="eventName" prefWidth="103.99994146823883" text="TITLE" />
                                 <TableColumn fx:id="eventType" prefWidth="71.33330535888672" text="TYPE" />
-                                <TableColumn fx:id="time" prefWidth="98.00001525878906" text="LOCATION" />
-                                <TableColumn fx:id="loca" prefWidth="145.3333740234375" text="TIME" />
+                                <TableColumn fx:id="time" prefWidth="98.00001525878906" text="TIME" />
+                                <TableColumn fx:id="loca" prefWidth="145.3333740234375" text="LOCATION" />
                             </columns>
                         </TableView>
                         <Button fx:id="addE" layoutX="255.0" layoutY="340.0" mnemonicParsing="false" onAction="#showAddE" text="ADD" />

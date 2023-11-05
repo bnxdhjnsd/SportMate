@@ -1,6 +1,9 @@
-package com.example.demo;
+package com.example.demo.controller;
 
-import Util.FileUtil;
+import com.example.demo.Util.FileUtilM;
+import com.example.demo.HelloApplication;
+import com.example.demo.Member;
+import com.example.demo.edit.MemberEditController;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
@@ -40,7 +43,7 @@ public class MemberController implements Controller{
      * Retrieves and display member data in the TableView.
      */
     private void getData(){
-        List<Member> members = FileUtil.readData();
+        List<Member> members = FileUtilM.readData();
         name.setCellValueFactory(new PropertyValueFactory<>("name"));
         age.setCellValueFactory(new PropertyValueFactory<>("age"));
         gender.setCellValueFactory(new PropertyValueFactory<>("gender"));
@@ -78,7 +81,7 @@ public class MemberController implements Controller{
     public void deleteMember(){
         Member member = tableViewM.getSelectionModel().getSelectedItem();
         if (member != null){
-            FileUtil.deleteData(member.getName());
+            FileUtilM.deleteData(member.getName());
             getData();
         }
     }

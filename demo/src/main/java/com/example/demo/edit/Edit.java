@@ -1,7 +1,7 @@
-package com.example.demo;
+package com.example.demo.edit;
 
-import Util.FileUtilE;
-import javafx.fxml.FXML;
+import com.example.demo.Event;
+
 /**
  * The 'Edit' interface provides a contract for classes that handle the editing of items in the application.
  */
@@ -11,11 +11,14 @@ public interface Edit {
      *
      * @param selected The event to be edited.
      */
-    public static void edit(Event selected){
+    public static void edit(Object selected){
 
     }
     /**
      * Confirms and applies the edit to the item.
      */
-    public void addConfirm();
+    public void editConfirm();
+
+    public void initialize();
+
 }

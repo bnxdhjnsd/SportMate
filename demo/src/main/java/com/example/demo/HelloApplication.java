@@ -93,6 +93,21 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
+    /**
+     * Loading FXML file, and open a new stage to add a gallery.
+     * @param fxml The FXML file for new scene.
+     */
+    public static void addG(String fxml){
+
+    }
+
+    /**
+     * Loading FXML file, and open a new stage to add an announcement.
+     * @param fxml The FXML file for new scene.
+     */
+    public static void addA(String fxml){}
+
+
     public static void main(String[] args) {
         launch();
     }

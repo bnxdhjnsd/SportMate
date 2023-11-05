@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Util;
 /**
  * The 'StringUtil' class checks if the acc/password is empty.
  */
